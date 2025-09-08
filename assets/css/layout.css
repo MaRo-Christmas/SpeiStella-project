@@ -1,0 +1,41 @@
+/* assets/css/layout.css */
+.site-header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--border); z-index: 100; }
+.header__inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.logo { display: inline-flex; align-items: center; gap: var(--space-3); font-weight: 700; }
+.logo img { width: 32px; height: 32px; }
+.nav__list { display: none; list-style: none; gap: var(--space-5); }
+.nav__link { padding: 8px 0; color: #111; }
+.nav__link:hover { color: var(--accent); }
+
+.burger { display: inline-flex; flex-direction: column; gap: 4px; background: none; border: 0; cursor: pointer; }
+.burger__bar { width: 24px; height: 2px; background: currentColor; }
+
+@media (min-width: 992px) {
+  .nav__list { display: flex; }
+  .burger { display: none; }
+}
+
+.mobile-menu { background: #fff; border-top: 1px solid var(--border); padding: var(--space-4); }
+.mobile-menu__list { list-style: none; display: grid; gap: var(--space-3); }
+
+.accordion { width: 100%; text-align: left; padding: var(--space-3) 0; border: 0; background: none; font-weight: 600; }
+.accordion__panel { padding: var(--space-2) 0 var(--space-4); display: grid; gap: var(--space-2); }
+.accordion__title { font-weight: 700; margin: var(--space-3) 0 var(--space-2); }
+
+.site-footer { margin-top: var(--space-8); border-top: 1px solid var(--border); background: #fff; }
+.footer__inner { display: grid; gap: var(--space-5); padding: var(--space-6) 0; color: var(--muted); }
+.footer__bottom { border-top: 1px solid var(--border); padding: var(--space-4) 0; color: var(--muted); font-size: 14px; }
+
+.hero { padding: clamp(48px, 8vw, 120px) 0; background: var(--bg-soft); }
+.hero__title { font-size: clamp(28px, 4vw, 48px); line-height: 1.12; margin: 0 0 var(--space-4); color: var(--brand); }
+.hero__text { color: var(--muted); max-width: 720px; margin-bottom: var(--space-6); }
+.btn { display: inline-flex; align-items: center; justify-content: center; height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--accent); color: #fff; background: var(--accent); font-weight: 600; }
+.btn--ghost { background: transparent; color: var(--accent); }
+
+.grid { display: grid; gap: var(--space-5); }
+.grid--3 { grid-template-columns: repeat(1, 1fr); }
+@media (min-width: 768px) { .grid--3 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .grid--3 { grid-template-columns: repeat(3, 1fr); } }
+
+.card { border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space-5); background: #fff; }
+.card h3 { margin-top: 0; }

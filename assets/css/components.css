@@ -1,0 +1,8 @@
+/* assets/css/components.css */
+.badge { display: inline-block; font-size: 12px; padding: 4px 8px; border-radius: 999px; background: #eef2ff; }
+.kicker { text-transform: uppercase; letter-spacing: .08em; font-weight: 700; font-size: 12px; color: var(--accent); }
+.list--links { list-style: none; display: grid; gap: 8px; }
+.list--inline { list-style: none; display: flex; gap: 16px; flex-wrap: wrap; }
+.section { padding: var(--space-7) 0; }
+.section__title { font-size: 24px; margin: 0 0 var(--space-4); }
+.lead { color: var(--muted); }

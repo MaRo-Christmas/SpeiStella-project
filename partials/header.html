@@ -1,0 +1,81 @@
+<!-- partials/header.html -->
+<header class="site-header" role="banner">
+  <div class="container header__inner">
+    <a class="logo" href="/" aria-label="SpeiStella — на головну">
+      <img src="/assets/img/logo.svg" alt="SpeiStella" />
+      <span>SpeiStella</span>
+    </a>
+
+    <nav class="nav nav--primary" aria-label="Головна навігація">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="/services/index.html">Послуги</a></li>
+        <li class="nav__item"><a class="nav__link" href="/blog/index.html">Блог</a></li>
+        <li class="nav__item"><a class="nav__link" href="/cases/index.html">Кейси</a></li>
+        <li class="nav__item"><a class="nav__link" href="/contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Відкрити меню">
+      <span class="burger__bar"></span>
+      <span class="burger__bar"></span>
+      <span class="burger__bar"></span>
+    </button>
+  </div>
+
+  <nav id="mobile-menu" class="mobile-menu" hidden aria-label="Мобільна навігація">
+    <ul class="mobile-menu__list">
+      <li><a href="/about.html">Про нас</a></li>
+      <li><a href="/blog/index.html">Блог</a></li>
+      <li><a href="/careers.html">Вакансії</a></li>
+      <li>
+        <button class="accordion" aria-expanded="false">Послуги</button>
+        <div class="accordion__panel" hidden>
+          <p class="accordion__title">Розробка ІТ‑проєктів</p>
+          <ul>
+            <li><a href="/services/dev/web-apps.html">Веб‑додатки</a></li>
+            <li><a href="/services/dev/startups.html">Стартапи</a></li>
+            <li><a href="/services/dev/websites.html">Сайти</a></li>
+            <li><a href="/services/dev/ios.html">iOS‑додатки</a></li>
+            <li><a href="/services/dev/android.html">Android‑додатки</a></li>
+            <li><a href="/services/dev/cross-platform.html">Крос‑платформи</a></li>
+          </ul>
+
+          <p class="accordion__title">Діджиталізація бізнесу</p>
+          <ul>
+            <li><a href="/services/digitalization/b2b-portals.html">B2B портали</a></li>
+            <li><a href="/services/digitalization/personal-accounts.html">Особисті кабінети</a></li>
+            <li><a href="/services/digitalization/crm.html">CRM системи</a></li>
+            <li><a href="/services/digitalization/lms.html">LMS системи</a></li>
+            <li><a href="/services/digitalization/ecommerce.html">Інтернет‑магазини</a></li>
+            <li><a href="/services/digitalization/corporate-portals.html">Корпоративні портали</a></li>
+          </ul>
+
+          <p class="accordion__title">Складні веб‑проєкти</p>
+          <ul>
+            <li><a href="/services/complex/marketplaces.html">Маркетплейси</a></li>
+            <li><a href="/services/complex/classifieds.html">Дошки оголошень</a></li>
+            <li><a href="/services/complex/portals.html">Портали</a></li>
+            <li><a href="/services/complex/gov.html">Державні сайти</a></li>
+            <li><a href="/services/complex/exchangers.html">Обмінники</a></li>
+            <li><a href="/services/complex/exchanges.html">Біржі</a></li>
+          </ul>
+
+          <p class="accordion__title">Індустрії</p>
+          <ul>
+            <li><a href="/services/industries/ecommerce.html">E‑commerce</a></li>
+            <li><a href="/services/industries/edtech.html">Освіта</a></li>
+            <li><a href="/services/industries/media.html">Інформація та ЗМІ</a></li>
+          </ul>
+
+          <p class="accordion__title">Види співпраці</p>
+          <ul>
+            <li><a href="/services/engagement/project.html">Проєктна робота</a></li>
+            <li><a href="/services/engagement/retainer.html">Постійний супровід</a></li>
+            <li><a href="/services/engagement/consulting.html">Технічний консалтинг</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="/contacts.html">Контакти</a></li>
+    </ul>
+  </nav>
+</header>
